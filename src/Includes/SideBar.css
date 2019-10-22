@@ -1,0 +1,14 @@
+.sidebar {
+  width: 30%;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

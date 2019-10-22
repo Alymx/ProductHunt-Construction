@@ -1,0 +1,414 @@
+/* ////////// PAGE DES POSTS ////////// */
+
+/* ////////// ENTETE ////////// */
+
+.entete {
+  max-width: 1100px;
+  margin-top: 68px;
+  background: var(--colorier-light-gray);
+  padding: 10px;
+}
+
+.entete a {
+  color: var(--colorier-dark-gray);
+}
+.entete a:hover {
+  color: var(--colorier-noir) !important;
+}
+
+.entete .acces {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+.entete .infos {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.entete .infos .productofday {
+  position: absolute;
+  right: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: var(--colorier-light-gray);
+  padding: 5px 10px;
+}
+
+.entete .infos .productofday:hover {
+  cursor: pointer;
+}
+
+.entete .infos .text-infos {
+  font-size: 11px;
+}
+
+.entete .infos .text-infos div:nth-child(2) {
+  margin-top: 15px;
+}
+
+.entete .infos .text-infos span {
+  margin: 5px;
+  font-size: 11px;
+  color: lightgray;
+  top: -2px;
+  cursor: pointer;
+}
+
+.entete .infos .text-infos p {
+  margin: 10px 0;
+}
+
+.entete .infos .text-infos div a {
+  font-size: 20px;
+  color: var(--colorier-noir);
+  font-weight: 600;
+}
+
+.entete .infos .gif-infos {
+  margin: 15px;
+}
+
+.entete .infos .text-infos #webapp,
+.entete .infos .text-infos #morewebapp,
+.entete .infos .text-infos #health,
+.entete .infos .text-infos #morehealth {
+  border: 1px solid #ddd !important;
+  height: 24px;
+  padding: 5px 8px;
+  font-size: 11px;
+  font-weight: 400 !important;
+  text-align: center;
+  color: var(--colorier-dark-gray);
+  display: inline;
+  text-decoration: none;
+  border-radius: 3px;
+  background: var(--colorier-blanc);
+}
+
+.entete .infos .text-infos #morewebapp,
+.entete .infos .text-infos #morehealth {
+  display: none;
+}
+
+.entete .infos .text-infos #health,
+.entete .infos .text-infos #webapp {
+  margin-right: 10px;
+}
+
+.entete .infos .text-infos #webapp:hover + #morewebapp,
+.entete .infos .text-infos #health:hover + #morehealth {
+  display: inline !important;
+  margin-right: 10px;
+}
+
+#plusdeux {
+  font-size: 12px;
+  color: var(--colorier-dark-gray);
+  font-weight: normal;
+  margin-left: 4px;
+}
+
+.entete .infos .text-infos #webapp:hover,
+.entete .infos .text-infos #morewebapp:hover,
+.entete .infos .text-infos #health:hover,
+.entete .infos .text-infos #morehealth:hover {
+  background: #ddd;
+  color: var(--colorier-dark-gray) !important;
+}
+
+#morewebapp {
+  display: none;
+}
+
+.entete .infos .text-infos #webapp:hover {
+  display: inline;
+}
+
+/* ////////// CORPUS PAGEPOST ////////// */
+
+.parentpost {
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px;
+}
+
+.listepost {
+  width: 69%;
+  margin: 20px auto;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.canvas {
+  background: var(--colorier-blanc);
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #ddd;
+  margin: 0 auto;
+}
+
+.listepost .canvas #thumbnail-post ul {
+  list-style: none;
+  margin: 10px 5px;
+  display: flex;
+  padding: 0;
+}
+
+.listepost .canvas #thumbnail-post ul li {
+  border: 1px solid #ddd;
+  width: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.listepost .canvas #description-post {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.listepost .canvas #partage-post {
+  margin: 5px 5px 15px 5px;
+}
+
+.listepost .canvas #partage-post #upvote {
+  text-align: center;
+  background: var(--colorier-dark-red);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 5%;
+}
+.listepost .canvas #partage-post #upvote:hover {
+  background: var(--colorier-flash-red);
+}
+
+.listepost .canvas #partage-post #upvote #votes {
+  font-weight: normal;
+  opacity: 0.5;
+  margin-left: 5px;
+}
+
+.listepost .canvas #partage-post #twitter-btn {
+  padding: 5px 25px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  background: #00aced;
+}
+
+.listepost .canvas #partage-post #facebook-btn {
+  padding: 5px 25px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  background: #3b5998;
+}
+
+.listepost .canvas #partage-post #more-btn {
+  padding: 5px 25px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  background: var(--colorier-noir);
+}
+
+@media only screen and (max-width: 768px) {
+  .entete {
+    background: var(--colorier-blanc);
+    height: 364px;
+  }
+
+  .entete .infos {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .entete .infos div {
+    margin: 0 auto;
+  }
+
+  entete .infos .text-infos {
+    height: 95px !important;
+  }
+
+  .entete .infos .productofday {
+    position: relative;
+    margin: auto;
+    right: auto;
+  }
+
+  .listepost {
+    width: 100%;
+    padding: 0;
+  }
+
+  .listepost .canvas {
+    width: 100%;
+  }
+}
+
+/* ////////// COMMENTAIRES ////////// */
+
+#inred {
+  color: var(--colorier-dark-red) !important;
+  font-weight: 600;
+  text-decoration: inherit;
+  font-size: 11px;
+}
+
+#kj {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--colorier-dark-gray);
+  line-height: 16px;
+}
+
+.commentaires {
+  background: var(--colorier-blanc);
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #ddd;
+  margin: 0 auto;
+}
+
+.commentaires .recommend {
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.commentaires .recommend:nth-child(1) {
+  border-bottom: 1px solid var(--colorier-light-gray);
+  padding-bottom: 20px;
+}
+
+.commentaires .recommend:last-child {
+  border-top: 1px solid var(--colorier-light-gray);
+  padding-top: 20px;
+}
+
+.commentaires .recommend #btn-yes,
+.commentaires .recommend div:nth-child(2) a {
+  border: 1px solid transparent;
+  background: var(--colorier-light-green);
+  border-radius: 3px;
+  color: var(--colorier-dark-green);
+  font-weight: 600;
+  padding: 3px 5px;
+  margin-left: 8px;
+}
+.commentaires .recommend #btn-yes:hover {
+  border: 1px solid var(--colorier-dark-green);
+}
+
+.commentaires .recommend #btn-no {
+  border: 1px solid transparent;
+  background: var(--colorier-light-red);
+  border-radius: 3px;
+  color: var(--colorier-dark-red);
+  font-weight: 600;
+  padding: 3px 5px;
+  margin-left: 8px;
+}
+.commentaires .recommend #btn-no:hover {
+  border: 1px solid var(--colorier-dark-red);
+}
+
+.commentaires .recommend div:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.commentaires .recommend div:nth-child(2) label {
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+.commentaires .recommend form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.commentaires .recommend form img {
+  border-radius: 50%;
+  margin: 15px 15px 15px 0;
+}
+
+.commentaires .recommend form button {
+  background: var(--colorier-dark-red);
+  border: none;
+  border-radius: 3px;
+  padding: 8px 15px;
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  right: 15px;
+}
+.commentaires .recommend form button:hover {
+  background: var(--colorier-flash-red);
+}
+
+.commentaires .recommend form input[type="text"] {
+  height: 32px;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 3px;
+  width: 75%;
+}
+
+.commentaires .discussions {
+  padding: 20px;
+}
+
+.commentaires .discussions #discussion {
+  display: block;
+  margin: 10px 0;
+}
+
+.commentaires .discussions #discussion div:nth-child(1) img {
+  border-radius: 50%;
+}
+
+.commentaires .discussions #discussion div:nth-child(1) a {
+  margin-left: 5px;
+  color: var(--colorier-noir);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.commentaires .discussions #discussion div:nth-child(2) {
+  margin-left: 40px;
+  font-weight: normal;
+  font-size: 11px;
+}
+
+.commentaires .discussions #discussion a {
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.commentaires .discussions #discussion div:nth-child(2) span:nth-child(4) {
+  font-weight: 300;
+}
